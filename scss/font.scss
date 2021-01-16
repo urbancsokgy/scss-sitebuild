@@ -1,0 +1,17 @@
+@use "sass:list";
+$mylist:();
+$h1-size: 7;
+$h6-size: ($h1-size)-6;
+    
+ @for $i from $h1-size through $h6-size {
+    $mylist: list.append($mylist, $i);    
+    
+ }
+ 
+ @for $i from 1 through 6 {
+ h#{$i}{
+      font-size: 100vw/100* list.nth($mylist , $i );
+      
+    
+ }
+ }

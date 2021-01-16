@@ -1,0 +1,34 @@
+@use 'sass:list';
+@use 'sass:map';
+
+
+$prefix: (m: margin, 
+    mt: margin-top, 
+    mr: margin-right, 
+    mb: margin-bottom,
+    ml: margin-left,
+    mx: margin-left,
+    my: margin-top
+    );
+
+    @each $name, $value in $prefix {
+        @for $i from 0 through 2 {
+           @if $name == "mx"{
+           .#{$name}-#{$i}{
+           #{$value}: $i*2px;
+            margin-right: $i*2px;
+            }
+            }
+            @else if $name == "my"{
+                .#{$name}-#{$i}{
+                    #{$value}: $i*2px;
+                     margin-bottom: $i*2px;
+                     }
+            }
+            @else{
+                .#{$name}-#{$i}{
+                    #{$value}: $i*2px;} 
+            }
+     }
+     
+   }

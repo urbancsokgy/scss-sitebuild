@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+.body-scroll {
+  padding-top: 3rem;
+}
+
+nav {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  box-shadow: 0 0 10px #7a7777;
+  display: flex;
+  justify-content: center;
+}
+nav div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  nav div {
+    align-items: center;
+  }
+}
+nav div ul {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+nav div ul li {
+  text-align: center;
+}
+nav div ul li a {
+  color: wheat;
+  display: block;
+  line-height: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+nav div ul li a:hover {
+  color: white;
+}
+nav div ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media screen and (min-width: 992px) {
+  nav div ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+}
+nav div input[type=checkbox] {
+  display: none;
+}
+nav div input[type=checkbox]:checked + ul {
+  display: flex;
+}
+nav div label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.75rem;
+}
+@media screen and (min-width: 992px) {
+  nav div label {
+    display: none;
+  }
+}
+nav div span {
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 1.5rem;
+}
+nav .brand {
+  flex-direction: row;
+  justify-content: center;
+}
+nav .brand a {
+  color: #fdcc52;
+  text-decoration: none;
+}
+nav .brand a:hover {
+  color: white;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.top-nav {
+  background-color: white;
+}
+.top-nav a, .top-nav .brand a {
+  color: gray;
+}
+.top-nav a:hover {
+  color: #fdcc52;
+}
+.top-nav .brand a:hover {
+  color: #fdcc52;
+}
+
+.text-white {
+  color: white;
+}
+
+.weight-thin {
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.large-padding {
+  padding-top: 20px;
+}
+
+.button {
+  padding: 0 2rem;
+  background-color: transparent;
+  height: 3rem;
+  display: block;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in;
+}
+.button:hover {
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+}
+
+.backg {
+  background: url(../img/bg-pattern.png), linear-gradient(101deg, #f43017 0%, #7f4fdf 100%);
+  background-repeat: repeat;
+}
+
+.second-section, .bg-orange {
+  background-color: #FDCB50;
+}
+
+.svg-ico {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.third-section {
+  padding: 0 10%;
+}
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+}
+.card img {
+  margin: 0 auto;
+}
+.card .card-title, .card i, .card p {
+  margin: 0 auto;
+}
+.card i {
+  color: #941a53;
+}
+.card .card-body, .card .card-footer {
+  border-top: 1px solid #ac1c94;
+  margin: 2rem 2rem;
+  padding-top: 2rem;
+}
+
+.jumbotron {
+  position: relative;
+  display: flex;
+  background-color: rgba(253, 203, 80, 0.3);
+}
+.jumbotron img {
+  z-index: -1;
+  max-width: 100%;
+}
+.jumbotron .col-6 {
+  position: absolute;
+  padding-top: 20%;
+  padding-left: 20%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.jumbotron .col-6 h3 {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.section-fifth i {
+  color: red;
+}
+.section-fifth a {
+  display: inline-block;
+}
+.section-fifth .ico {
+  width: 5vw;
+  opacity: 0.9;
+}
+.section-fifth .ico:hover {
+  opacity: 1;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* Tooltip text */
+  /* Show the tooltip text when you mouse over the tooltip container */
+}
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+footer {
+  background-color: #343A40;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+footer ul a:hover {
+  color: #fdcc52;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 4;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content */
+  /* The Close Button */
+}
+.modal h3 {
+  display: inline-block;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visible {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .col-12 {
+    width: 50%;
+  }
+
+  .mx-md-first {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .mx-md-second {
+    margin-left: 10px;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

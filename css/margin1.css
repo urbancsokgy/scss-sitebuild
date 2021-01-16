@@ -1,0 +1,91 @@
+.m-0 {
+  margin: 0px;
+}
+
+.m-1 {
+  margin: 2px;
+}
+
+.m-2 {
+  margin: 4px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-1 {
+  margin-top: 2px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-1 {
+  margin-right: 2px;
+}
+
+.mr-2 {
+  margin-right: 4px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-1 {
+  margin-bottom: 2px;
+}
+
+.mb-2 {
+  margin-bottom: 4px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-1 {
+  margin-left: 2px;
+}
+
+.ml-2 {
+  margin-left: 4px;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-1 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.mx-2 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.my-2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/*# sourceMappingURL=margin1.css.map */

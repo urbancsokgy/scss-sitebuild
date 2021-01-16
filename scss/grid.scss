@@ -1,0 +1,20 @@
+@use "sass:list";
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-narrow{
+    padding: 20px 10%;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: 100%*$i/12;
+        
+    }
+    }
+
+   
+
+  
